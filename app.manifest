@@ -1,0 +1,13 @@
+{
+    "id"          : "sdk.user.contrast",
+    "name"        : "contrast",
+    "css"         : [ "appStylesheet.css" ],
+    "template"    : "appLayout.html",
+    "view"        : "appView.js",
+    "controller"  : "appController.js",
+    "permissions" : [ ],
+    "categoryId"  : "14",
+    "date"        : "2017-09-12",
+    "version"     : "1.0.0",
+    "screens"     : "screens.json"
+}

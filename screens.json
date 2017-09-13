@@ -1,0 +1,11 @@
+[
+    {
+        "id": "contrast-screen",
+        "chambers": [
+            {
+                "id": "contrast-chamber",
+                "js": "screens/contrast-chamber.js"
+            }
+        ]
+    }
+]
