@@ -1,5 +1,8 @@
 #home-view-pane {
-    margin: 100px 0 0 25px;
+    position: absolute;
+    top: 100px;
+    left: 25px;
+    z-index: 9999;
 }
 
 #contrast-text-view {

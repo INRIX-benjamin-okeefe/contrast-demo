@@ -8,24 +8,9 @@ define(function (require) {
         Pane = require('common/ui/Pane');
 
     return class extends ModuleView {
-        beforeStart () {
-            return super.beforeStart().then(() => {
-                const pane = new Pane({ id: 'home-view-pane' });
-                const contrastTextView = new TextView({ id: 'contrast-text-view' });
-                const viewInChamberButton = new Button({
-                    text: 'View in Chamber',
-                    click: () => {
-                        this.goto('contrast-chamber');                        
-                    }
-                });
-
-                this.getContrast().then(response => {
-                    contrastTextView.setText(response);
-                });
-
-                pane.addChild(contrastTextView);
-                pane.addChild(viewInChamberButton);
-                pane.render(this.getView());
+        init () {
+            return super.init().then(() => {
+                this.goto('contrast-chamber');
             });
         }
     };
